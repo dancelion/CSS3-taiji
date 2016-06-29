@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 太极图</title>
+	<style type="text/css" media="screen">
+		body{background: #212121;color:#fff;margin:0;padding: 0;}
+		#zz { position: fixed; left: 0;right: 0;top: 0;bottom: 0;}
+		#yuan { margin: auto; position: absolute; top: 0; left: 0; bottom: 0; right: 0; height: 600px; width: 300px; border: 1px solid #000; border-radius: 300px; border-left: 300px solid #000; background: #fff; -moz-box-shadow: 0 0 10px 3px rgb(211,211,211); -webkit-box-shadow: 0 0 10px 3px rgb(211,211,211); box-shadow: 0 0 7px 1px rgb(177,177,177); -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; cursor: pointer; outline: none; }
+		#yuan:hover { -moz-transform: rotate(540deg); -o-transform: rotate(540deg); -ms-transform: rotate(540deg); -webkit-transform: rotate(540deg); transform: rotate(540deg); }
+		#yuan::before,#yuan::after{content: '';width: 75px;height:75px;position: absolute;left: -37.5px;border-radius: 75px;}
+		#yuan::before {  top: 112.1px; box-shadow: 0 0 0 113px #000; background: #FFF; }
+		#yuan::after {  top: 412.6px; box-shadow: 0 0 0 113px #FFF; background: #000; }
+
+	</style>
+</head>
+<body>
+	<div id="zz">
+	  <div id="yuan" title="Enter"></div>
+	</div>
+</body>
+</html>
